@@ -1,7 +1,29 @@
 aid: soundbetter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/soundbetter.png
 name: SoundBetter
-description: SoundBetter is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SoundBetter is an online marketplace that connects musicians and artists with
+  professional audio talent for hire — mixing and mastering engineers, music
+  producers, singers, songwriters, beat makers, and studio session musicians.
+  Clients post jobs or browse curated professional profiles, audition portfolio
+  tracks, and hire and pay through the platform, which handles escrow, milestones,
+  and delivery. The company also operates a storefront (my.soundbetter.com) and a
+  plugins shop (shop.soundbetter.com / Imagine Plugins). SoundBetter was acquired
+  by Spotify in 2019. As of this enrichment pass, SoundBetter publishes a
+  consumer/creator web marketplace but exposes no public developer API, OpenAPI
+  specification, SDKs, or /.well-known discovery surface; this profile therefore
+  captures company identity and a live domain-security probe rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/soundbetter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Music
+- Marketplace
+- Audio
+- Music Production
+- Mixing and Mastering
+- Creative Services
+- Freelance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,18 @@ maintainers:
 common:
 - type: Website
   url: https://soundbetter.com
+- type: About
+  url: https://soundbetter.com/about
+- type: PrivacyPolicy
+  url: https://soundbetter.com/privacy
+- type: Support
+  url: https://soundbetter.com/contact
+- type: FAQ
+  url: https://soundbetter.com/faq
+- type: DomainSecurity
+  url: security/soundbetter-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
